@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.img-fluid{
+width: 20px;
+height: 20px;
+}
+
+.ratingcontainer{
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+}
+.rating{
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: large;
+}
+.btn{
+    margin-top: 10px;
+}
+.card{
+color: white;
+    margin: 20px 20px;
+   
+    
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.card-comp{
+
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    place-items: center;
+  
+    
+    
+} 
+.card:hover{
+    transform: scale(1.1);
+}
+.card-container{
+    
+    background-color: black;
+    width: 100%;
+    
+}
+.header{
+    display: block;
+}
+.logoimg{
+  
+    width: 48px;
+    border-radius: 50%;
+}
+/* .channel-info{
+    display: flex;
+} */
+.verified-icon{
+    margin-left: 5px;
+    color: gray;
+}
+.card-text{
+    margin-bottom: -3px;
+}
+.video--url{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    
+}
+.video--url:hover{
+    color: white;
+}
+.channelurl{
+    text-decoration: none;
+    color: gray;
+}
+.channelurl:hover{
+    color: gray;
+}
+.card-text{
+    color: gray;
+}
+.header{
+    display: flex;
+    
+    justify-content: center;
+}
