@@ -9,14 +9,14 @@ const Card = (props) => {
         <img className="card-img-top" src={props.img} alt="Card image cap" />
 
         </a>
-        < div className="card-body">
+        < div className="card-body" style={{padding: "10px"}}>
           <div className="header">
             <a href={props.channelurl} target='_blank'>
             <img  className="logoimg" src={props.logoimg} alt="logoimg" />
             </a>
             <a href={props.url} target = '_blank' className="video--url">
 
-            <h6  className="card-title">{props.title}</h6>
+            <h6  className="card-title" style={{ textOverflow: "ellipsis"}}>{props.title}</h6>
             </a>
           </div>
          <a href={props.channelurl} className="channelurl" target='_blank'>
