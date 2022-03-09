@@ -113,3 +113,10 @@ color: white;
     width: 286px;
     object-fit: cover;
 }
+.tw-effect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 1.3rem;
+}

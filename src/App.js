@@ -1,7 +1,8 @@
 import Card from "./Card"
 import React from 'react'
 import Data from './Data'
-
+import Typewriter from "typewriter-effect"
+import "./index.css"
 
 const App = () => {
   const mydb = Data.map((Data)=>
@@ -25,6 +26,12 @@ const App = () => {
   );
   return (
     <div className="card-container">
+      <div className="tw-effect">
+      <Typewriter loop={true} onInit={(typewriter)=>{
+      typewriter.typeString("Presenting Youtube Clone").pauseFor(3000).deleteAll().typeString('Created By Sarad Gyawali').start();
+   }}
+   />
+        </div>
 <div className="card-comp">
 {mydb}
 </div>
