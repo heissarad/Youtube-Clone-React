@@ -1,122 +1,149 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: black;
-}
-.img-fluid{
-width: 20px;
-height: 20px;
+body {
+  background-color: black;
 }
 
-.ratingcontainer{
-    display: flex;
-    align-items: center;
-    padding: 10px 0px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.rating{
-    margin-left: 10px;
-    font-weight: bold;
-    font-size: large;
-}
-.btn{
-    margin-top: 10px;
-}
-.card{
-color: white;
-    /* margin: 20px 20px; */
-   
-    
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.card-comp{
 
-    display: grid;
-    /* margin-top: 20px; */
-    gap: 2rem;
-    /* background-color: black; */
-    height: 100vh;
-    /* overflow: scroll; */
-    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
-    place-items: center;
+.card {
   
-    
-    
-} 
-.card:hover{
-    transform: scale(1.1);
+  cursor: pointer;
+  border: none;
+  width: 18rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.card-container{
-    
-    /* background-color: black; */
-    width: 100%;
-    height: 100vh;
-    /* overflow: hidden; */
-    
+.card-comp {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  place-items: center;
 }
-.header{
-    display: block;
+.card:hover {
+  transform: scale(1.05);
 }
-.logoimg{
-    margin-top: 2rem;
+
+.logoimg {
   height: 36px;
-    width: 36px;
-    border-radius: 50%;
+  width: 36px;
+  border-radius: 50%;
 }
-/* .channel-info{
-    display: flex;
-} */
-.verified-icon{
-    margin-left: 5px;
-    color: gray;
+
+.verified-icon {
+  margin-left: 5px;
+  color: gray;
 }
-.card-text{
-    margin-bottom: -3px;
+.card-text {
+  color: gray;
 }
-.video--url{
-    margin-left: 10px;
-    text-decoration: none;
-    color: white;
-    
+.video-title-url {
+  margin-left: 10px;
+  text-decoration: none;
 }
-.video--url:hover{
-    color: white;
+
+.channel-name-url {
+  text-decoration: none;
+  color: gray;
 }
-.channelurl{
-    text-decoration: none;
-    color: gray;
+
+.header {
+  display: flex;
 }
-.channelurl:hover{
-    color: gray;
-}
-.card-text{
-    color: gray;
-}
-.header{
-    display: flex;
-    
-    /* justify-content: center; */
-}
-.card-title{
-    display: block; /* Fallback for non-webkit */
+.card-title {
+  display: block; /* Fallback for non-webkit */
   display: -webkit-box;
-  height: 2.6em; /* Fallback for non-webkit, line-height * 2 */
-  line-height: 1.3em;
+  /* height: 2.6em; Fallback for non-webkit, line-height * 2 */
+  /* line-height: 1.3em; */
   -webkit-line-clamp: 2; /* if you change this, make sure to change the fallback line-height and height */
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
-  margin-top: 2rem;
+  color: white;
 }
-.card-img-top{
-    height: 160px;
-    width: 286px;
-    object-fit: cover;
+.card-img-top {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  height: 160px;
+  width: 286px;
+  object-fit: cover;
 }
-.tw-effect{
+.tw-effect {
+  margin: 20px 5px;
+  display: flex;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5rem;
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.card-body {
+  padding: 5px;
+}
+/* .time{
+    height: 12px;
+    width: 60px;
+    background-color: white;
+    position: absolute;
+    left: 13rem;
+    top: 9rem;
+} */
+.sun--logo{
+  
+  position: absolute;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 8rem;
+  /* background-color: white; */
+  background: rgb(229, 233, 235);
+  border-radius: 8px;
+  
+}
+
+@media only screen and (max-width: 700px) {
+ 
+  .tw-effect {
+    margin: 20px 5px;
     display: flex;
+    font-weight: bold;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1rem;
+    -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      -khtml-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+  }
+
+  .sun--logo{
+  
+    position: absolute;
+    width: 40px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 1.5rem;
+    /* background-color: white; */
+    background: rgb(229, 233, 235);
+    border-radius: 8px;
+    
+  }
 }
