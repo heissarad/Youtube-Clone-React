@@ -100,7 +100,7 @@ body {
     top: 9rem;
 } */
 .sun--logo{
-  
+  cursor: pointer;
   position: absolute;
   width: 50px;
   height: 40px;
