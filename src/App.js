@@ -1,10 +1,17 @@
 import Card from "./Card";
-import React from 'react';
+import React, {useEffect,useState} from 'react';
 import Data from './Data';
+import Loader from "./Loader/loader";
 import Typewriter from "typewriter-effect";
 import "./index.css";
 
 const App = () => {
+  const [loader, setloader] = useState(true);
+  useEffect(() => {
+    setTimeout(() => {
+      setloader(false);
+    }, 2000);
+  });
   const user_fav_mode = JSON.parse(localStorage.getItem('mode'));
 
   const [mode, setMode] = React.useState(
@@ -65,6 +72,11 @@ const App = () => {
 
 
   return (
+    <div>
+       {loader ? (
+        <Loader />
+      ) : (
+    <>
     <div className="card-container" >
      
       <span className="sun--logo" onClick={handleOnClick}>
@@ -84,6 +96,8 @@ const App = () => {
       <div className="card-comp">
         {mydb}
       </div>
+    </div>
+    </>)}
     </div>
   );
 };

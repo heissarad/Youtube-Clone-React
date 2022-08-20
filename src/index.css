@@ -147,3 +147,35 @@ body {
     
   }
 }
+
+/*Loader CSS*/
+.Box {
+  width: 150px;
+  height: 150px;
+  background-color: red;
+  animation: spin 1s linear infinite, move 1s forwards linear 1s;
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg) scale(0.2);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+    border-radius: 100%;
+  }
+}
+@keyframes move {
+  100% {
+    transform: scale(20);
+    background-color: #06283d;
+  }
+}
